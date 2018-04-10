@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lastelaagridb;
 
 namespace DLL2
 {
@@ -14,6 +15,8 @@ namespace DLL2
         [STAThread]
         static void Main()
         {
+            ConnectionDatabase.connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=lastelaagri.mdb;Persist Security Info=True";
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

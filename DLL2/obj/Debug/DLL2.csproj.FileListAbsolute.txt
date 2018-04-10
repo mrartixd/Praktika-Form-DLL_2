@@ -1,0 +1,14 @@
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\bin\Debug\DLL2.exe.config
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\bin\Debug\DLL2.exe
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\bin\Debug\DLL2.pdb
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\bin\Debug\ClassLibrary.dll
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\bin\Debug\ClassLibrary.pdb
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.csprojResolveAssemblyReference.cache
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Properties.Resources.resources
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.csproj.GenerateResource.cache
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.csproj.CoreCompileInputs.cache
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.csproj.CopyComplete
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.exe
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.pdb
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Form1.resources
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Form2.resources
