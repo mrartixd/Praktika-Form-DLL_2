@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace DLL2
 {
-    public partial class Form5 : Form
+    public partial class AdminP : Form
     {
-        public Form5()
+        public AdminP()
         {
             InitializeComponent();
+        }
+
+        private void rühmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RuhmT ruhmform = new RuhmT();
+            ruhmform.MdiParent = this;
+            ruhmform.Show();
         }
     }
 }

@@ -11,9 +11,9 @@ using Lastelaagridb;
 
 namespace DLL2
 {
-    public partial class Form2 : Form
+    public partial class Reg : Form
     {
-        public Form2()
+        public Reg()
         {
             InitializeComponent();
 

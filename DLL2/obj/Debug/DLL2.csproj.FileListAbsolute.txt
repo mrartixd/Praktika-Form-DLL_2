@@ -7,8 +7,10 @@ C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.csprojResolv
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Properties.Resources.resources
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.csproj.GenerateResource.cache
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.csproj.CoreCompileInputs.cache
-C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.csproj.CopyComplete
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.exe
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.pdb
-C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Form1.resources
-C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Form2.resources
+C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.RuhmT.resources
+C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Start.resources
+C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Reg.resources
+C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Log.resources
+C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.AdminP.resources

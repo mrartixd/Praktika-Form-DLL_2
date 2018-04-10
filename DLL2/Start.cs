@@ -11,17 +11,29 @@ using Lastelaagridb;
 
 namespace DLL2
 {
-    public partial class Form1 : Form
+    public partial class Start : Form
     {
-        public Form1()
+        public Start()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 regist = new Form2();
+            Reg regist = new Reg();
             regist.Show();
+        }
+
+        private void adminPanelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Log loginform = new Log();
+            loginform.Show();
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
         }
     }
 }

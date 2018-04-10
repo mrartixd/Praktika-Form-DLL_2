@@ -1,6 +1,6 @@
 ﻿namespace DLL2
 {
-    partial class Form2
+    partial class Reg
     {
         /// <summary>
         /// Required designer variable.
