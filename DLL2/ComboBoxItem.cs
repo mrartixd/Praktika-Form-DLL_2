@@ -9,17 +9,17 @@ namespace DLL2
     public class ComboBoxItem
     {
         string displayValue;
-        int hiddenValue;
+        string hiddenValue;
 
         //Constructor
-        public ComboBoxItem(string d, int h)
+        public ComboBoxItem(string d, string h)
         {
             displayValue = d;
             hiddenValue = h;
         }
 
         //Accessor
-        public int HiddenValue
+        public string HiddenValue
         {
             get
             {

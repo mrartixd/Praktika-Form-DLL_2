@@ -65,19 +65,19 @@
             // insertToolStripMenuItem
             // 
             this.insertToolStripMenuItem.Name = "insertToolStripMenuItem";
-            this.insertToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.insertToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.insertToolStripMenuItem.Text = "Insert";
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.updateToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.updateToolStripMenuItem.Text = "Update";
             // 
             // tablesToolStripMenuItem
@@ -102,14 +102,16 @@
             this.tudengToolStripMenuItem.Name = "tudengToolStripMenuItem";
             this.tudengToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.tudengToolStripMenuItem.Text = "Tudeng";
+            this.tudengToolStripMenuItem.Click += new System.EventHandler(this.tudengToolStripMenuItem_Click);
             // 
             // õpetajadToolStripMenuItem
             // 
             this.õpetajadToolStripMenuItem.Name = "õpetajadToolStripMenuItem";
             this.õpetajadToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.õpetajadToolStripMenuItem.Text = "Õpetajad";
+            this.õpetajadToolStripMenuItem.Click += new System.EventHandler(this.õpetajadToolStripMenuItem_Click);
             // 
-            // Form4
+            // AdminP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -117,7 +119,7 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form4";
+            this.Name = "AdminP";
             this.Text = "Admin Panel";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

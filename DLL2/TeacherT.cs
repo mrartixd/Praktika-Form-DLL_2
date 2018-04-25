@@ -11,44 +11,50 @@ using Lastelaagridb;
 
 namespace DLL2
 {
-    public partial class RuhmT : Form
+    public partial class TeacherT : Form
     {
-        public RuhmT()
+        public TeacherT()
         {
             InitializeComponent();
         }
 
-        private void RuhmT_Load(object sender, EventArgs e)
+        private void TeacherT_Load(object sender, EventArgs e)
         {
-            List<Ruhm> ruhm = new List<Ruhm>();
-            ruhm = WorkDB.GetRuhms();
+            List<Teacher> teacher = new List<Teacher>();
+            teacher = WorkDB.GetTeachers();
             DataTable table = new DataTable();
             DataColumn dataColumn = table.Columns.Add("ID", typeof(string));
             table.Columns.Add("Nimi", typeof(string));
-            
+            table.Columns.Add("Isikukood", typeof(string));
+            table.Columns.Add("Telefone", typeof(string));
+            table.Columns.Add("Ruhm", typeof(string));
+
             table.PrimaryKey = new DataColumn[] { dataColumn };
-            foreach (Ruhm r in ruhm)
+            foreach (Teacher t in teacher)
             {
-                table.Rows.Add(new object[] { r.ID, r.NimiRuhm });
+                table.Rows.Add(new object[] { t.ID, t.Nimi, t.Isikukood, t.Telefon, t.Ruhm });
             }
             table.AcceptChanges();
             dataGridView1.DataSource = table;
-           
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            Delete del = new Delete();
-            del.num = 1;
-            del.ShowDialog();
-            dataGridView1.DataSource = new UpdateRowSource();
+            Add add = new Add();
+            add.num = 3;
+            add.Show();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            Add add = new Add();
-            add.num = 1;
-            add.Show();
+            Delete del = new Delete();
+            del.num = 2;
+            del.Show();
         }
     }
 }

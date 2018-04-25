@@ -11,43 +11,45 @@ using Lastelaagridb;
 
 namespace DLL2
 {
-    public partial class RuhmT : Form
+    public partial class StudentT : Form
     {
-        public RuhmT()
+        public StudentT()
         {
             InitializeComponent();
         }
 
-        private void RuhmT_Load(object sender, EventArgs e)
+        private void StudentT_Load(object sender, EventArgs e)
         {
-            List<Ruhm> ruhm = new List<Ruhm>();
-            ruhm = WorkDB.GetRuhms();
+            List<Student> student = new List<Student>();
+            student = WorkDB.GetStudents();
             DataTable table = new DataTable();
             DataColumn dataColumn = table.Columns.Add("ID", typeof(string));
             table.Columns.Add("Nimi", typeof(string));
-            
+            table.Columns.Add("Isikukood", typeof(string));
+            table.Columns.Add("Kool", typeof(string));
+            table.Columns.Add("Telefone", typeof(string));
+            table.Columns.Add("Ruhm", typeof(string));
+
             table.PrimaryKey = new DataColumn[] { dataColumn };
-            foreach (Ruhm r in ruhm)
+            foreach (Student s in student)
             {
-                table.Rows.Add(new object[] { r.ID, r.NimiRuhm });
+                table.Rows.Add(new object[] { s.ID, s.Nimi, s.Isikukood, s.Kool, s.Telefon, s.Ruhm });
             }
             table.AcceptChanges();
             dataGridView1.DataSource = table;
-           
-        }
-
-        private void toolStripButton3_Click(object sender, EventArgs e)
-        {
-            Delete del = new Delete();
-            del.num = 1;
-            del.ShowDialog();
-            dataGridView1.DataSource = new UpdateRowSource();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
+            Delete del = new Delete();
+            del.num = 3;
+            del.Show();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
             Add add = new Add();
-            add.num = 1;
+            add.num = 2;
             add.Show();
         }
     }

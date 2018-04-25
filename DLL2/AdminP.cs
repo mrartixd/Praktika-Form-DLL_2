@@ -23,5 +23,19 @@ namespace DLL2
             ruhmform.MdiParent = this;
             ruhmform.Show();
         }
+
+        private void tudengToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StudentT student = new StudentT();
+            student.MdiParent = this;
+            student.Show();
+        }
+
+        private void õpetajadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TeacherT teachert = new TeacherT();
+            teachert.MdiParent = this;
+            teachert.Show();
+        }
     }
 }

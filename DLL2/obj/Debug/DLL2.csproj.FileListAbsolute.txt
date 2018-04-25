@@ -14,3 +14,7 @@ C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Start.resour
 C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Reg.resources
 C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Log.resources
 C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.AdminP.resources
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.StudentT.resources
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.TeacherT.resources
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Delete.resources
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Add.resources

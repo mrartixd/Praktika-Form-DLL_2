@@ -42,7 +42,7 @@ namespace DLL2
                 student.Klass = Convert.ToInt32(comboBoxKlass.SelectedValue);
                 student.Aadress = textBoxAdr.Text;
                 student.Telefon = textBoxTel.Text;
-                student.Ruhm = ((ComboBoxItem)comboBox1.SelectedItem).HiddenValue;
+                student.Ruhm = Convert.ToInt32(((ComboBoxItem)comboBox1.SelectedItem).HiddenValue);
                 int arv = WorkDB.InsertNewStudent(student);
                 if (arv != 0)
                 {
@@ -62,7 +62,7 @@ namespace DLL2
             ruhms = WorkDB.GetRuhms();
             foreach (Ruhm r in ruhms)
             {
-                comboBox1.Items.Add(new ComboBoxItem(r.NimiRuhm, r.ID));
+                comboBox1.Items.Add(new ComboBoxItem(r.NimiRuhm, Convert.ToString(r.ID)));
             }
         }
     }

@@ -48,7 +48,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Start.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentT.Designer.cs">
+      <DependentUpon>StudentT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherT.Designer.cs">
+      <DependentUpon>TeacherT.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RuhmT.resx">
       <DependentUpon>RuhmT.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,7 +134,14 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StudentT.resx">
+      <DependentUpon>StudentT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherT.resx">
+      <DependentUpon>TeacherT.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\DataSources\Lastelaagridb.ConnectionDatabase.datasource" />
     <None Include="Properties\DataSources\Lastelaagridb.Ruhm.datasource" />
     <None Include="Properties\DataSources\Lastelaagridb.Student.datasource" />
@@ -128,6 +165,15 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\rotate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\x-button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
