@@ -20,6 +20,11 @@ namespace DLL2
 
         private void TeacherT_Load(object sender, EventArgs e)
         {
+            UpdateTable();
+        }
+
+        public void UpdateTable()
+        {
             List<Teacher> teacher = new List<Teacher>();
             teacher = WorkDB.GetTeachers();
             DataTable table = new DataTable();
@@ -37,7 +42,6 @@ namespace DLL2
             table.AcceptChanges();
             dataGridView1.DataSource = table;
         }
-
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             Add add = new Add();
@@ -47,7 +51,9 @@ namespace DLL2
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-
+            Update update = new Update();
+            update.num = 3;
+            update.Show();
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)

@@ -20,6 +20,12 @@ namespace DLL2
 
         private void StudentT_Load(object sender, EventArgs e)
         {
+            UpdateTable();
+        }
+
+
+        public void UpdateTable()
+        {
             List<Student> student = new List<Student>();
             student = WorkDB.GetStudents();
             DataTable table = new DataTable();
@@ -51,6 +57,13 @@ namespace DLL2
             Add add = new Add();
             add.num = 2;
             add.Show();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            Update update = new Update();
+            update.num = 2;
+            update.Show();
         }
     }
 }

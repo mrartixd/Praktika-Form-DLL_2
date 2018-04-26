@@ -32,5 +32,10 @@ namespace DLL2
         {
             return displayValue;
         }
+
+        public static explicit operator ComboBoxItem(bool v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

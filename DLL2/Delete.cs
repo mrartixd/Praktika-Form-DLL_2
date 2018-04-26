@@ -21,6 +21,7 @@ namespace DLL2
 
         private void Delete_Load(object sender, EventArgs e)
         {
+           
             if(num == 1)
             {
                 List<Ruhm> list = new List<Ruhm>();
@@ -38,6 +39,15 @@ namespace DLL2
                     comboBox1.Items.Add(new ComboBoxItem(Convert.ToString(t.Isikukood), Convert.ToString(t.ID)));
                 }
             }
+            else
+            {
+                List<Student> list = new List<Student>();
+                list = WorkDB.GetStudents();
+                foreach (Student t in list)
+                {
+                    comboBox1.Items.Add(new ComboBoxItem(Convert.ToString(t.Isikukood) + ","+ t.Nimi, Convert.ToString(t.ID)));
+                }
+            }
             
 
             
@@ -45,27 +55,59 @@ namespace DLL2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (num == 1)
+            if((ComboBoxItem)comboBox1.SelectedItem == null)
             {
-                int arv = WorkDB.DeleteRuhm(Convert.ToInt32(((ComboBoxItem)comboBox1.SelectedItem).HiddenValue));
-                if (arv != 0)
+                if (num == 1)
                 {
-                    MessageBox.Show("Oli delete " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
+                    int arv = WorkDB.DeleteRuhm(Convert.ToInt32(((ComboBoxItem)comboBox1.SelectedItem).HiddenValue));
+                    if (arv != 0)
+                    {
+                        MessageBox.Show("Oli delete " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RuhmT obj = (RuhmT)Application.OpenForms["RuhmT"];
+                        obj.UpdateForm();
+                        obj.dataGridView1.Update();
+                        obj.dataGridView1.Refresh();
+                        this.Close();
+                    }
+                    else
+                    { MessageBox.Show("Delete ebaõnnestus", "Viga", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                }
+                else if (num == 2)
+                {
+                    int arv = WorkDB.DeleteTeacher(Convert.ToInt32(((ComboBoxItem)comboBox1.SelectedItem).HiddenValue));
+                    if (arv != 0)
+                    {
+                        MessageBox.Show("Oli delete " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        TeacherT obj = (TeacherT)Application.OpenForms["TeacherT"];
+                        obj.UpdateTable();
+                        obj.dataGridView1.Update();
+                        obj.dataGridView1.Refresh();
+                        this.Close();
+                    }
+                    else
+                    { MessageBox.Show("Delete ebaõnnestus", "Viga", MessageBoxButtons.OK, MessageBoxIcon.Error); }
                 }
                 else
-                { MessageBox.Show("Delete ebaõnnestus", "Viga", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-            }else if(num == 2)
-            {
-                int arv = WorkDB.DeleteTeacher(Convert.ToInt32(((ComboBoxItem)comboBox1.SelectedItem).HiddenValue));
-                if (arv != 0)
                 {
-                    MessageBox.Show("Oli delete " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
+                    int arv = WorkDB.DeleteStudent(Convert.ToInt32(((ComboBoxItem)comboBox1.SelectedItem).HiddenValue));
+                    if (arv != 0)
+                    {
+                        MessageBox.Show("Oli delete " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        StudentT obj = (StudentT)Application.OpenForms["StudentT"];
+                        obj.UpdateTable();
+                        obj.dataGridView1.Update();
+                        obj.dataGridView1.Refresh();
+                        this.Close();
+                    }
+                    else
+                    { MessageBox.Show("Delete ebaõnnestus", "Viga", MessageBoxButtons.OK, MessageBoxIcon.Error); }
                 }
-                else
-                { MessageBox.Show("Delete ebaõnnestus", "Viga", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             }
+            else
+            {
+                MessageBox.Show("Check combo box", "Viga", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
             
         }
 

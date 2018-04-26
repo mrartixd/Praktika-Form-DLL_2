@@ -37,7 +37,7 @@ namespace DLL2
             {
                 Student student = new Student();
                 student.Nimi = textboxname.Text;
-                student.Isikukood = Convert.ToInt32(textBoxid.Text);
+                student.Isikukood = textBoxid.Text;
                 student.Kool = textBoxKool.Text;
                 student.Klass = Convert.ToInt32(comboBoxKlass.SelectedValue);
                 student.Aadress = textBoxAdr.Text;

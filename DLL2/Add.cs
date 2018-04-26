@@ -104,8 +104,10 @@ namespace DLL2
                 if(arv !=0)
                 {
                     MessageBox.Show("Oli lisatud " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    RuhmT ruhmt = new RuhmT();
-                    ruhmt.Refresh();                    
+                    RuhmT obj = (RuhmT)Application.OpenForms["RuhmT"];
+                    obj.UpdateForm();
+                    obj.dataGridView1.Update();
+                    obj.dataGridView1.Refresh();
                     this.Close();
                 }
                 else
@@ -115,9 +117,9 @@ namespace DLL2
             {
                 Student student = new Student();
                 student.Nimi = textBox1.Text;
-                student.Isikukood = Convert.ToInt32(textBox3.Text);
+                student.Isikukood = textBox3.Text;
                 student.Kool = textBox4.Text;
-                student.Klass = Convert.ToInt32(comboBox1.SelectedItem);
+                student.Klass = int.Parse(comboBox1.SelectedItem.ToString());
                 student.Telefon = textBox6.Text;
                 student.Aadress = textBox7.Text;
                 student.Ruhm = Convert.ToInt32(((ComboBoxItem)comboBox2.SelectedItem).HiddenValue);
@@ -125,8 +127,10 @@ namespace DLL2
                 if (arv!=0)
                 {
                     MessageBox.Show("Oli lisatud " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    StudentT studentT = new StudentT();
-                    studentT.Refresh();
+                    StudentT obj = (StudentT)Application.OpenForms["StudentT"];
+                    obj.UpdateTable();
+                    obj.dataGridView1.Update();
+                    obj.dataGridView1.Refresh();
                     this.Close();
                 }
                 else
@@ -136,7 +140,7 @@ namespace DLL2
             {
                 Teacher teacher = new Teacher();
                 teacher.Nimi = textBox1.Text;
-                teacher.Isikukood = Convert.ToInt32(textBox3.Text);
+                teacher.Isikukood = textBox3.Text;
                 teacher.Telefon = textBox6.Text;
                 teacher.Aadress = textBox7.Text;
                 teacher.Ruhm = Convert.ToInt32(((ComboBoxItem)comboBox2.SelectedItem).HiddenValue);
@@ -144,8 +148,10 @@ namespace DLL2
                 if (arv != 0)
                 {
                     MessageBox.Show("Oli lisatud " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    TeacherT teacherT = new TeacherT();
-                    teacherT.Refresh();
+                    TeacherT obj = (TeacherT)Application.OpenForms["TeacherT"];
+                    obj.UpdateTable();
+                    obj.dataGridView1.Update();
+                    obj.dataGridView1.Refresh();
                     this.Close();
                 }
                 else

@@ -18,3 +18,5 @@ C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.StudentT.res
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.TeacherT.resources
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Delete.resources
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Add.resources
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.csproj.CopyComplete
+C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Update.resources

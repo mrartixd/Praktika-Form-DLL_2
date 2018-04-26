@@ -105,6 +105,12 @@
     <Compile Include="TeacherT.Designer.cs">
       <DependentUpon>TeacherT.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.Designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add.resx">
       <DependentUpon>Add.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherT.resx">
       <DependentUpon>TeacherT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Lastelaagridb.ConnectionDatabase.datasource" />
     <None Include="Properties\DataSources\Lastelaagridb.Ruhm.datasource" />

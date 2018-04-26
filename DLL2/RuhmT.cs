@@ -23,7 +23,7 @@ namespace DLL2
             UpdateForm();
 
         }
-        private void UpdateForm()
+        public void UpdateForm()
         {
             List<Ruhm> ruhm = new List<Ruhm>();
             ruhm = WorkDB.GetRuhms();
@@ -31,12 +31,14 @@ namespace DLL2
             DataColumn dataColumn = table.Columns.Add("ID", typeof(string));
             table.Columns.Add("Nimi", typeof(string));
             table.PrimaryKey = new DataColumn[] { dataColumn };
+            
             foreach (Ruhm r in ruhm)
             {
                 table.Rows.Add(new object[] { r.ID, r.NimiRuhm });
             }
             table.AcceptChanges();
             dataGridView1.DataSource = table;
+            
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)
@@ -52,14 +54,13 @@ namespace DLL2
             Add add = new Add();
             add.num = 1;
             add.Show();
-           
         }
 
-        private void RuhmT_Activated(object sender, EventArgs e)
+        private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            UpdateForm();
-            dataGridView1.Refresh();
-            dataGridView1.Update();
+            Update update = new Update();
+            update.num = 1;
+            update.Show();
         }
     }
 }
