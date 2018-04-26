@@ -158,5 +158,27 @@ namespace DLL2
                 { MessageBox.Show("Lisamine ebaõnnestus", "Viga", MessageBoxButtons.OK, MessageBoxIcon.Error); }
             }
         }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '+'))
+            {
+                e.Handled = true;
+
+                if ((e.KeyChar == '+') && ((sender as TextBox).Text.IndexOf('+') > -1))
+                {
+                    e.Handled = true;
+                }
+            }
+        }
     }
 }
