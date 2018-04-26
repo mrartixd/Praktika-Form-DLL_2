@@ -19,7 +19,7 @@ namespace DLL2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(textBoxLogin.Text == "admin" || textBoxPass.Text == "admin")
+            if(textBoxLogin.Text == "admin" && textBoxPass.Text == "admin")
             {
                 this.Close();
                 AdminP adminpanel = new AdminP();

@@ -55,7 +55,7 @@ namespace DLL2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if((ComboBoxItem)comboBox1.SelectedItem == null)
+            if((ComboBoxItem)comboBox1.SelectedItem != null)
             {
                 if (num == 1)
                 {

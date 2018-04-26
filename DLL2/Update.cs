@@ -107,7 +107,7 @@ namespace DLL2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(comboBox3.SelectedItem == null)
+            if(comboBox3.SelectedItem != null)
             {
                 if (num == 1)
                 {
