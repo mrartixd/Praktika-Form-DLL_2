@@ -93,21 +93,21 @@
             // rühmToolStripMenuItem
             // 
             this.rühmToolStripMenuItem.Name = "rühmToolStripMenuItem";
-            this.rühmToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.rühmToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.rühmToolStripMenuItem.Text = "Rühm";
             this.rühmToolStripMenuItem.Click += new System.EventHandler(this.rühmToolStripMenuItem_Click);
             // 
             // tudengToolStripMenuItem
             // 
             this.tudengToolStripMenuItem.Name = "tudengToolStripMenuItem";
-            this.tudengToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.tudengToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.tudengToolStripMenuItem.Text = "Tudeng";
             this.tudengToolStripMenuItem.Click += new System.EventHandler(this.tudengToolStripMenuItem_Click);
             // 
             // õpetajadToolStripMenuItem
             // 
             this.õpetajadToolStripMenuItem.Name = "õpetajadToolStripMenuItem";
-            this.õpetajadToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.õpetajadToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
             this.õpetajadToolStripMenuItem.Text = "Õpetajad";
             this.õpetajadToolStripMenuItem.Click += new System.EventHandler(this.õpetajadToolStripMenuItem_Click);
             // 
@@ -121,6 +121,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "AdminP";
             this.Text = "Admin Panel";
+            this.Activated += new System.EventHandler(this.AdminP_Activated);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

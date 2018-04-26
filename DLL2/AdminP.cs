@@ -37,5 +37,12 @@ namespace DLL2
             teachert.MdiParent = this;
             teachert.Show();
         }
+
+        private void AdminP_Activated(object sender, EventArgs e)
+        {
+            RuhmT ruhmform = new RuhmT();
+            ruhmform.Refresh();
+            
+        }
     }
 }

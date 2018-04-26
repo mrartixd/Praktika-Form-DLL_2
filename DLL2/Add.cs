@@ -104,6 +104,8 @@ namespace DLL2
                 if(arv !=0)
                 {
                     MessageBox.Show("Oli lisatud " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RuhmT ruhmt = new RuhmT();
+                    ruhmt.Refresh();                    
                     this.Close();
                 }
                 else
@@ -123,6 +125,8 @@ namespace DLL2
                 if (arv!=0)
                 {
                     MessageBox.Show("Oli lisatud " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    StudentT studentT = new StudentT();
+                    studentT.Refresh();
                     this.Close();
                 }
                 else
@@ -140,6 +144,8 @@ namespace DLL2
                 if (arv != 0)
                 {
                     MessageBox.Show("Oli lisatud " + arv + " rida", "Valmis", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    TeacherT teacherT = new TeacherT();
+                    teacherT.Refresh();
                     this.Close();
                 }
                 else
