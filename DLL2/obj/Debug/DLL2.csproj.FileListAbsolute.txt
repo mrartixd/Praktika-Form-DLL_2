@@ -11,12 +11,10 @@ C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.exe
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.pdb
 C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.RuhmT.resources
 C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Start.resources
-C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Reg.resources
-C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Log.resources
 C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.AdminP.resources
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.StudentT.resources
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.TeacherT.resources
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Delete.resources
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Add.resources
-C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.csproj.CopyComplete
 C:\Users\artix\source\repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Update.resources
+C:\Users\artix\Source\Repos\Praktika-Form-DLL_2\DLL2\obj\Debug\DLL2.Tabel.resources

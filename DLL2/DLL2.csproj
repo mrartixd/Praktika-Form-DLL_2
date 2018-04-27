@@ -67,18 +67,6 @@
     <Compile Include="Start.Designer.cs">
       <DependentUpon>Start.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reg.Designer.cs">
-      <DependentUpon>Reg.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Log.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Log.Designer.cs">
-      <DependentUpon>Log.cs</DependentUpon>
-    </Compile>
     <Compile Include="AdminP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +86,12 @@
     </Compile>
     <Compile Include="StudentT.Designer.cs">
       <DependentUpon>StudentT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabel.Designer.cs">
+      <DependentUpon>Tabel.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherT.cs">
       <SubType>Form</SubType>
@@ -123,12 +117,6 @@
     <EmbeddedResource Include="Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reg.resx">
-      <DependentUpon>Reg.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Log.resx">
-      <DependentUpon>Log.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdminP.resx">
       <DependentUpon>AdminP.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="StudentT.resx">
       <DependentUpon>StudentT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabel.resx">
+      <DependentUpon>Tabel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeacherT.resx">
       <DependentUpon>TeacherT.cs</DependentUpon>

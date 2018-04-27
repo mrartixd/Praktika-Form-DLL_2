@@ -21,8 +21,10 @@ namespace DLL2
 
         private void Delete_Load(object sender, EventArgs e)
         {
-           
-            if(num == 1)
+            comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
+            if (num == 1)
             {
                 List<Ruhm> list = new List<Ruhm>();
                 list = WorkDB.GetRuhms();

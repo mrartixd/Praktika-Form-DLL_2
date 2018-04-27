@@ -32,6 +32,15 @@ namespace DLL2
 
         private void Update_Load(object sender, EventArgs e)
         {
+            comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            comboBox1.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox1.AutoCompleteSource = AutoCompleteSource.ListItems;
+            comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            comboBox2.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox2.AutoCompleteSource = AutoCompleteSource.ListItems;
+            comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            comboBox3.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            comboBox3.AutoCompleteSource = AutoCompleteSource.ListItems;
             List<Ruhm> ruhms = new List<Ruhm>();
             ruhms = WorkDB.GetRuhms();
             foreach (Ruhm r in ruhms)
@@ -58,8 +67,11 @@ namespace DLL2
                 foreach (Ruhm r in ruhm)
                 {
                     comboBox3.Items.Add(new ComboBoxItem(r.NimiRuhm, Convert.ToString(r.ID)));
+
+
                 }
-               
+
+
             }
             else if (num == 2)
             {
@@ -74,7 +86,7 @@ namespace DLL2
                 students = WorkDB.GetStudents();
                 foreach (Student r in students)
                 {
-                    comboBox3.Items.Add(new ComboBoxItem(r.Isikukood + ", "+ r.Nimi, Convert.ToString(r.ID)));
+                    comboBox3.Items.Add(new ComboBoxItem(r.Isikukood + ", " + r.Nimi, Convert.ToString(r.ID)));
                 }
 
             }
@@ -107,7 +119,7 @@ namespace DLL2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(comboBox3.SelectedItem != null)
+            if (comboBox3.SelectedItem != null)
             {
                 if (num == 1)
                 {
@@ -137,7 +149,7 @@ namespace DLL2
                     student.Klass = int.Parse(comboBox1.SelectedItem.ToString());
                     student.Telefon = textBox6.Text;
                     student.Aadress = textBox7.Text;
-                    student.Ruhm = Convert.ToInt32(((ComboBoxItem)comboBox2.SelectedItem).HiddenValue);
+                    student.RuhmID = Convert.ToInt32(((ComboBoxItem)comboBox2.SelectedItem).HiddenValue);
                     int arv = WorkDB.UpdateStudent(student, Convert.ToInt32(((ComboBoxItem)comboBox3.SelectedItem).HiddenValue));
                     if (arv != 0)
                     {
@@ -181,7 +193,7 @@ namespace DLL2
 
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) )
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
 
@@ -199,6 +211,68 @@ namespace DLL2
                     e.Handled = true;
                 }
             }
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (num == 1)
+            {
+                List<Ruhm> ruhm = new List<Ruhm>();
+                ruhm = WorkDB.GetRuhms();
+                foreach (Ruhm r in ruhm)
+                {
+
+                    if (comboBox3.SelectedItem != null)
+                    {
+                        if (r.ID == Convert.ToInt32(((ComboBoxItem)comboBox3.SelectedItem).HiddenValue))
+                        {
+                            textBox1.Text = r.NimiRuhm.ToString();
+                        }
+                    }
+
+                }
+            }
+            else if (num == 2)
+            {
+                List<Student> students = new List<Student>();
+                students = WorkDB.GetStudents();
+                foreach (Student r in students)
+                {
+                    if (comboBox3.SelectedItem != null)
+                    {
+                        if (r.ID == Convert.ToInt32(((ComboBoxItem)comboBox3.SelectedItem).HiddenValue))
+                        {
+                            textBox1.Text = r.Nimi.ToString();
+                            textBox3.Text = r.Isikukood.ToString();
+                            textBox4.Text = r.Kool.ToString();
+                            comboBox1.Text = r.Klass.ToString();
+                            textBox6.Text = r.Telefon.ToString();
+                            textBox7.Text = r.Aadress.ToString();
+                            comboBox2.Text = r.Ruhm.ToString();
+                        }
+                    }
+                }
+            }
+            else
+            {
+                List<Teacher> teachers = new List<Teacher>();
+                teachers = WorkDB.GetTeachers();
+                foreach (Teacher r in teachers)
+                {
+                    if (comboBox3.SelectedItem != null)
+                    {
+                        if (r.ID == Convert.ToInt32(((ComboBoxItem)comboBox3.SelectedItem).HiddenValue))
+                        {
+                            textBox1.Text = r.Nimi.ToString();
+                            textBox3.Text = r.Isikukood.ToString();
+                            textBox6.Text = r.Telefon.ToString();
+                            textBox7.Text = r.Aadress.ToString();
+                            comboBox2.Text = r.Ruhm.ToString();
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
