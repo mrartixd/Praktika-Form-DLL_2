@@ -37,7 +37,7 @@ namespace DLL2
             table.PrimaryKey = new DataColumn[] { dataColumn };
             foreach (Teacher t in teacher)
             {
-                table.Rows.Add(new object[] { t.ID, t.Nimi, t.Isikukood, t.Telefon, t.Ruhm });
+                table.Rows.Add(new object[] { t.ID, t.Nimi, t.Isikukood, t.Telefon, t.Ruhm.NimiRuhm });
             }
             table.AcceptChanges();
             dataGridView1.DataSource = table;

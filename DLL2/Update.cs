@@ -170,7 +170,7 @@ namespace DLL2
                     teacher.Isikukood = textBox3.Text;
                     teacher.Telefon = textBox6.Text;
                     teacher.Aadress = textBox7.Text;
-                    teacher.Ruhm = Convert.ToInt32(((ComboBoxItem)comboBox2.SelectedItem).HiddenValue);
+                    teacher.RuhmID = Convert.ToInt32(((ComboBoxItem)comboBox2.SelectedItem).HiddenValue);
                     int arv = WorkDB.UpdateTeacher(teacher, Convert.ToInt32(((ComboBoxItem)comboBox3.SelectedItem).HiddenValue));
                     if (arv != 0)
                     {

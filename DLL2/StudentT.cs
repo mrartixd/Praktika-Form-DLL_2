@@ -34,12 +34,12 @@ namespace DLL2
             table.Columns.Add("Isikukood", typeof(string));
             table.Columns.Add("Kool", typeof(string));
             table.Columns.Add("Telefone", typeof(string));
-            table.Columns.Add("Ruhm", typeof(int));
+            table.Columns.Add("Ruhm", typeof(string));
 
             table.PrimaryKey = new DataColumn[] { dataColumn };
             foreach (Student s in student)
             {
-                table.Rows.Add(new object[] { s.ID, s.Nimi, s.Isikukood, s.Kool, s.Telefon, s.Ruhm.NimiRuhm });
+                table.Rows.Add(new object[] { s.ID, s.Nimi, s.Isikukood, s.Kool, s.Telefon, s.Ruhm.NimiRuhm});
             }
             table.AcceptChanges();
             dataGridView1.DataSource = table;
