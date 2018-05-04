@@ -182,7 +182,7 @@ namespace DLL2
                         this.Close();
                     }
                     else
-                    { MessageBox.Show("Lisamine ebaõnnestus", "Viga", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    { MessageBox.Show("Muutmine ebaõnnestus", "Viga", MessageBoxButtons.OK, MessageBoxIcon.Error); }
                 }
             }
             else
