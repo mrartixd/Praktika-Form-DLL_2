@@ -39,13 +39,15 @@ namespace DLL2
             {
                 AdminP adminpanel = new AdminP();
                 adminpanel.Show();
-                
-                
+                textBox2.Text = "";
+                label4.Visible = false;
+
+
             }
             else
             {
-                label3.Visible = true;
-                label3.Text = "Login fail";
+                label4.Visible = true;
+                label4.Text = "Login fail";
             }
         }
     }
